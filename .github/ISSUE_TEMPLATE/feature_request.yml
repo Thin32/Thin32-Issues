@@ -1,12 +1,33 @@
 name: Feature Request
 description: Suggest an idea or enhancement for Thin32
-title: "[FEATURE] "
+title: "[SOFTWARE NAME/GENERAL] FEATURE - "
 labels: ["enhancement"]
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for suggesting a new feature!
+        
+        **Title format:** [SOFTWARE NAME/GENERAL] FEATURE - Small description
+        Example: [Thin32 App/GENERAL] FEATURE - Add dark mode support
+  
+  - type: checkboxes
+    id: duplicate-check
+    attributes:
+      label: Duplicate Check
+      description: Please confirm you have checked for duplicate issues
+      options:
+        - label: I have searched existing issues and confirmed this is not a duplicate
+          required: true
+  
+  - type: input
+    id: software
+    attributes:
+      label: Thin32 Software
+      description: Which Thin32 software is this feature request for?
+      placeholder: e.g. Thin32 App, Thin32 Tool, GENERAL (for all), etc.
+    validations:
+      required: true
   
   - type: textarea
     id: problem

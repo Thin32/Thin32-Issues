@@ -1,12 +1,24 @@
 name: Bug Report
 description: Report a bug or issue with Thin32 software
-title: "[BUG] "
+title: "[SOFTWARE NAME/GENERAL] BUG - "
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for taking the time to report this bug!
+        
+        **Title format:** [SOFTWARE NAME/GENERAL] BUG - Small description
+        Example: [Thin32 App/GENERAL] BUG - Crashes on startup
+  
+  - type: checkboxes
+    id: duplicate-check
+    attributes:
+      label: Duplicate Check
+      description: Please confirm you have checked for duplicate issues
+      options:
+        - label: I have searched existing issues and confirmed this is not a duplicate
+          required: true
   
   - type: textarea
     id: description
@@ -58,10 +70,19 @@ body:
       required: true
   
   - type: input
+    id: software
+    attributes:
+      label: Thin32 Software
+      description: Which Thin32 software are you using?
+      placeholder: e.g. Thin32 App, Thin32 Tool, etc.
+    validations:
+      required: true
+  
+  - type: input
     id: version
     attributes:
-      label: Thin32 Version
-      description: Version of Thin32 you're using
+      label: Software Version
+      description: Version of the specific Thin32 software you're using
       placeholder: e.g. 1.0.0
     validations:
       required: true
