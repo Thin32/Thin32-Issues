@@ -9,7 +9,7 @@ body:
         Thanks for taking the time to report this bug!
         
         **Title format:** [SOFTWARE NAME/GENERAL] BUG - Small description
-        Example: [Thin32 App/GENERAL] BUG - Crashes on startup
+        Example: [Glide] BUG - Crashes on startup
   
   - type: checkboxes
     id: duplicate-check
@@ -74,7 +74,7 @@ body:
     attributes:
       label: Thin32 Software
       description: Which Thin32 software are you using?
-      placeholder: e.g. Thin32 App, Thin32 Tool, etc.
+      placeholder: e.g. Glide
     validations:
       required: true
   
