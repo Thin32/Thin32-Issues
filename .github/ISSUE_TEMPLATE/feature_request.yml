@@ -9,7 +9,7 @@ body:
         Thanks for suggesting a new feature!
         
         **Title format:** [SOFTWARE NAME/GENERAL] FEATURE - Small description
-        Example: [Thin32 App/GENERAL] FEATURE - Add dark mode support
+        Example: [Glide] FEATURE - Add icon support
   
   - type: checkboxes
     id: duplicate-check
@@ -25,7 +25,7 @@ body:
     attributes:
       label: Thin32 Software
       description: Which Thin32 software is this feature request for?
-      placeholder: e.g. Thin32 App, Thin32 Tool, GENERAL (for all), etc.
+      placeholder: e.g. Glide
     validations:
       required: true
   
