@@ -1,0 +1,45 @@
+name: Question
+description: Ask a question about Thin32 software
+title: "[QUESTION] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ask your question about Thin32!
+  
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: A clear and concise question about Thin32
+      placeholder: What would you like to know?
+    validations:
+      required: true
+  
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Relevant context or background information
+      placeholder: Provide context...
+    validations:
+      required: false
+  
+  - type: textarea
+    id: tried
+    attributes:
+      label: What I've Tried
+      description: What you've already tried or researched
+      placeholder: I've already tried...
+    validations:
+      required: false
+  
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Any other information that might be helpful
+      placeholder: Add any other information...
+    validations:
+      required: false

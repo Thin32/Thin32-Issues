@@ -20,4 +20,6 @@ To report an issue:
 
 For questions and support, please open an issue with the "question" label.
 
+Alternatively, you can email us at **contact@thin32.win** if needed.
+
 Thank you for helping improve Thin32!
